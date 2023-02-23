@@ -3,9 +3,8 @@ import { type NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full min-h-screen grid place-items-center">
-
-    <img src="/api/render" alt="Hello world!" />
+    <div className="grid min-h-screen w-full place-items-center">
+      <img src="/api/render" alt="It broken :(" />
     </div>
   );
 };
