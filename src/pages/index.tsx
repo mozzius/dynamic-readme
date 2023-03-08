@@ -4,7 +4,7 @@ import { type NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <div className="grid min-h-screen w-full place-items-center">
-      <img src="/api/render" alt="It broken :(" />
+      <img src="/api/nice-argument" alt="It broken :(" />
     </div>
   );
 };

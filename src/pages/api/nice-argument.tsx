@@ -10,7 +10,11 @@ export default function meme(res: NextRequest) {
     (
       <div tw="w-full h-full flex flex-col justify-center text-3xl font-bold p-20 bg-white">
         <p>Nice argument, however</p>
-        <p tw="text-8xl">{res.ip}</p>
+        <p tw="text-8xl">{res.headers.get("x-real-ip")}</p>
+        <p>
+          {res.headers.get("x-vercel-ip-latitude")},{" "}
+          {res.headers.get("x-vercel-ip-longitude")}
+        </p>
       </div>
     ),
     {
